@@ -1,0 +1,24 @@
+1)state with "w" and State with "W"
+==================================
+
+install.packages("datasets")
+library(datasets)
+head(USArrests)
+state=rownames(USArrests)
+grep("w",state)
+grep("W",state)
+
+output:
+==========
+> grep("w",state)
+[1]  8 11 15 29 30 31 32
+> grep("W",state)
+[1] 47 48 49 50
+
+2)histogram number of character of us state
+===========================================
+nchar(state)
+hist(nchar(state))
+
+
+
